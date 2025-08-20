@@ -12,9 +12,6 @@ from rdflib.namespace import Namespace
 # https://www.w3.org/submissions/sioc-spec/
 SIOC = Namespace("http://rdfs.org/sioc/ns#")
 
-# Semantically-Interlinked Online Developer Communities
-SIODC = Namespace("https://siodc.example.org/#")
-
 # Also this is a workaround
 LICENSE_NAMESPACE = Namespace("https://spdx.org/licenses/")
 
@@ -113,7 +110,7 @@ def pyproject_doap(project: PyProject, base_url: str = "https://example.org/") -
         if documentation := urls.get("documentation"):
             project_resource.add(DOAP.documentation, URIRef(documentation))
         if issue_tracker := urls.get("Bug Tracker"):
-            project_resource.add(SIODC.issue_tracker, URIRef(issue_tracker))
+            project_resource.add(DOAP["bug-database"], URIRef(issue_tracker))
 
     if project_license := project_dict.get("license"):
         if license_text := project_license.text:

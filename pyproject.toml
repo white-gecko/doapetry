@@ -21,7 +21,7 @@ requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [project.scripts]
-doapetry = "doapetry:cli"
+doapetry = "doapetry:app"
 
 [project.urls]
 homepage = "https://github.com/white-gecko/doapetry"

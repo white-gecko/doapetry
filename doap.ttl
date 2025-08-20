@@ -2,14 +2,20 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://github.com/white-gecko/doapetry> a doap:Project ;
-    doap:description "Create a DOAP based on the pyproject.toml" ;
-    doap:developer <mailto:arndtn@gmail.com> ;
-    doap:license <https://spdx.org/licenses/EUPL-1.2> ;
-    doap:name "doapetry" ;
-    doap:shortdesc "Create a DOAP based on the pyproject.toml" .
+<https://github.com/white-gecko/doapetry.git> a doap:Repository ;
+    doap:location <https://github.com/white-gecko/doapetry> .
 
 <https://spdx.org/licenses/EUPL-1.2> rdfs:label "EUPL-1.2" .
+
+<https://github.com/white-gecko/doapetry> a doap:Project ;
+    doap:bug-database <https://github.com/white-gecko/doapetry/issues> ;
+    doap:description "Create a DOAP based on the pyproject.toml" ;
+    doap:developer <mailto:arndtn@gmail.com> ;
+    doap:homepage <https://github.com/white-gecko/doapetry> ;
+    doap:license <https://spdx.org/licenses/EUPL-1.2> ;
+    doap:name "doapetry" ;
+    doap:repository <https://github.com/white-gecko/doapetry.git> ;
+    doap:shortdesc "Create a DOAP based on the pyproject.toml" .
 
 <mailto:arndtn@gmail.com> a foaf:Agent ;
     foaf:mbox <mailto:arndtn@gmail.com> ;

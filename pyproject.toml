@@ -22,3 +22,8 @@ build-backend = "poetry.core.masonry.api"
 
 [project.scripts]
 doapetry = "doapetry:cli"
+
+[project.urls]
+homepage = "https://github.com/white-gecko/doapetry"
+"Bug Tracker" = "https://github.com/white-gecko/doapetry/issues"
+repository = "https://github.com/white-gecko/doapetry.git"

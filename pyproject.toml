@@ -1,7 +1,7 @@
 [project]
 name = "doapetry"
 version = "0.1.0"
-description = ""
+description = "Create a DOAP based on the pyproject.toml"
 authors = [
     {name = "Natanael Arndt",email = "arndtn@gmail.com"}
 ]

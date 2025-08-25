@@ -106,7 +106,7 @@ def pyproject_doap(project: PyProject, base_url: str = "https://example.org/") -
             repository_resource = g.resource(repository)
             project_resource.add(DOAP.repository, repository_resource)
             repository_resource.add(RDF.type, DOAP.Repository)
-            repository_resource.add(DOAP.location, project_resource)
+            repository_resource.add(DOAP.location, repository_resource)
         if documentation := urls.get("documentation"):
             project_resource.add(DOAP.documentation, URIRef(documentation))
         if issue_tracker := urls.get("Bug Tracker"):

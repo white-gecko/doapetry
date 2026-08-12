@@ -1,6 +1,6 @@
 [project]
 name = "doapetry"
-version = "0.1.2"
+version = "0.1.3"
 description = "Create a DOAP based on the pyproject.toml"
 authors = [
     {name = "Natanael Arndt",email = "arndtn@gmail.com"}
@@ -12,7 +12,7 @@ dependencies = [
     "rdflib (>=7.1.4,<8.0.0)",
     "typer (>=0.16.0,<0.17.0)",
     "loguru (>=0.7.3,<0.8.0)",
-    "pyproject-parser (>=0.13.0,<0.14.0)",
+    "pyproject-parser (>=0.14.0,<0.15.0)",
 ]
 
 

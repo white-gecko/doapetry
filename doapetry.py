@@ -63,11 +63,12 @@ def doapetry(project_path: Path, base_url: str) -> Graph | None:
     g = pyproject_doap(project, base_url)
 
     # clean up
-    readme = project_path / project.project.get("readme").file
-    with open(readme, "r") as readme_file:
-        if readme_file.read() == README_TMP_CONTENT:
-            logger.info(f"Remove temporarily created {readme}.")
-            readme.unlink()
+    if project.project.get("readme"):
+        readme = project_path / project.project.get("readme").file
+        with open(readme, "r") as readme_file:
+            if readme_file.read() == README_TMP_CONTENT:
+                logger.info(f"Remove temporarily created {readme}.")
+                readme.unlink()
 
     return g
 
